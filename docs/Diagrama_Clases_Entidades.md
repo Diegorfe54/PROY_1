@@ -52,7 +52,7 @@ classDiagram
     }
 
     Paciente "1" <.. "1..*" Tratamiento : (1,N) depende de
-    Paciente "1" -- "1" Historial : tiene
+    Paciente "1" <.. "1" Historial : tiene
     Historial "1" *-- "0..*" Alergia : (0,N) se compone de
     Alergia "1" -- "1" Medicamento : asociada a
     Tratamiento "1" *-- "1..*" Cita : (1,N) se desarrolla en
